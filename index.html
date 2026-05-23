@@ -6,283 +6,296 @@
   <title>Masheica Thomas | Executive Support & Digital Strategy</title>
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
     }
 
-    body {
-      font-family: Arial, sans-serif;
-      background: #f8f5f1;
-      color: #111;
-      line-height: 1.6;
+    body{
+      font-family:Arial, sans-serif;
+      background:#f8f5f1;
+      color:#111;
+      line-height:1.6;
     }
 
-    nav {
-      position: sticky;
-      top: 0;
-      background: #111;
-      padding: 18px 24px;
-      z-index: 1000;
+    html{
+      scroll-behavior:smooth;
     }
 
-    .nav-container {
-      max-width: 1200px;
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    nav{
+      position:sticky;
+      top:0;
+      background:#111;
+      z-index:1000;
+      padding:18px 24px;
     }
 
-    .logo {
-      color: #d6a76b;
-      font-size: 28px;
-      font-weight: bold;
+    .nav-container{
+      max-width:1200px;
+      margin:auto;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
     }
 
-    nav ul {
-      display: flex;
-      list-style: none;
-      gap: 24px;
+    .logo{
+      color:#d6a76b;
+      font-size:28px;
+      font-weight:bold;
     }
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
+    nav ul{
+      display:flex;
+      gap:24px;
+      list-style:none;
     }
 
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 80px 20px;
-      background: linear-gradient(to bottom right,#f6f1ea,#ffffff);
+    nav a{
+      color:white;
+      text-decoration:none;
+      font-weight:bold;
     }
 
-    .hero-content {
-      max-width: 1200px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      align-items: center;
+    .hero{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:80px 20px;
+      background:linear-gradient(to bottom right,#f6f1ea,#ffffff);
     }
 
-    .hero h1 {
-      font-size: 68px;
-      line-height: 1.05;
-      margin-bottom: 24px;
+    .hero-content{
+      max-width:1200px;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:60px;
+      align-items:center;
     }
 
-    .highlight {
-      color: #c79a5b;
+    .hero h1{
+      font-size:68px;
+      line-height:1.05;
+      margin-bottom:24px;
     }
 
-    .hero p {
-      font-size: 22px;
-      color: #444;
-      margin-bottom: 35px;
+    .highlight{
+      color:#c79a5b;
     }
 
-    .btn {
-      display: inline-block;
-      padding: 16px 30px;
-      background: #111;
-      color: white;
-      border-radius: 12px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-right: 15px;
-      margin-bottom: 15px;
+    .hero p{
+      font-size:22px;
+      color:#444;
+      margin-bottom:35px;
     }
 
-    .btn-outline {
-      background: transparent;
-      border: 2px solid #111;
-      color: #111;
+    .btn{
+      display:inline-block;
+      padding:16px 30px;
+      background:#111;
+      color:white;
+      border-radius:12px;
+      text-decoration:none;
+      font-weight:bold;
+      margin-right:15px;
+      margin-bottom:15px;
     }
 
-    .hero img {
-      width: 100%;
-      border-radius: 30px;
-      box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+    .btn-outline{
+      background:transparent;
+      border:2px solid #111;
+      color:#111;
     }
 
-    section {
-      padding: 100px 20px;
+    .hero img{
+      width:100%;
+      border-radius:30px;
+      box-shadow:0 20px 50px rgba(0,0,0,0.15);
     }
 
-    .container {
-      max-width: 1200px;
-      margin: auto;
+    section{
+      padding:100px 20px;
     }
 
-    .section-title {
-      font-size: 52px;
-      margin-bottom: 30px;
-      text-align: center;
+    .container{
+      max-width:1200px;
+      margin:auto;
     }
 
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 50px;
-      align-items: center;
+    .section-title{
+      font-size:52px;
+      margin-bottom:30px;
+      text-align:center;
     }
 
-    .about-text p {
-      margin-bottom: 20px;
-      color: #555;
-      font-size: 20px;
+    .about-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:50px;
+      align-items:center;
     }
 
-    .about-image img {
-      width: 100%;
-      border-radius: 28px;
+    .about-text p{
+      margin-bottom:20px;
+      color:#555;
+      font-size:20px;
     }
 
-    .services {
-      background: #111;
-      color: white;
+    .about-image img{
+      width:100%;
+      border-radius:28px;
+      box-shadow:0 15px 40px rgba(0,0,0,0.1);
     }
 
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
-      gap: 25px;
-      margin-top: 50px;
+    .services{
+      background:#111;
+      color:white;
     }
 
-    .card {
-      background: #1d1d1d;
-      border: 1px solid #2f2f2f;
-      padding: 35px;
-      border-radius: 22px;
+    .services-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:25px;
+      margin-top:50px;
     }
 
-    .card h3 {
-      margin-bottom: 15px;
-      color: #d6a76b;
-      font-size: 28px;
+    .card{
+      background:#1d1d1d;
+      border:1px solid #2f2f2f;
+      padding:35px;
+      border-radius:22px;
     }
 
-    .card p {
-      color: #ddd;
+    .card h3{
+      margin-bottom:15px;
+      color:#d6a76b;
+      font-size:28px;
     }
 
-    .journey {
-      background: #f2ece5;
+    .card p{
+      color:#ddd;
     }
 
-    .journey-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      align-items: center;
+    .journey{
+      background:#f2ece5;
     }
 
-    .journey img {
-      width: 100%;
-      border-radius: 24px;
+    .journey-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:40px;
+      align-items:center;
     }
 
-    .journey p {
-      font-size: 20px;
-      color: #444;
-      margin-bottom: 20px;
+    .journey img{
+      width:100%;
+      border-radius:24px;
+      box-shadow:0 15px 40px rgba(0,0,0,0.1);
     }
 
-    .blog-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-      gap: 30px;
-      margin-top: 50px;
+    .journey p{
+      font-size:20px;
+      color:#444;
+      margin-bottom:20px;
     }
 
-    .blog-card {
-      background: white;
-      border-radius: 24px;
-      overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    .blog-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:30px;
+      margin-top:50px;
     }
 
-    .blog-card img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
+    .blog-card{
+      background:white;
+      border-radius:24px;
+      overflow:hidden;
+      box-shadow:0 10px 30px rgba(0,0,0,0.08);
     }
 
-    .blog-content {
-      padding: 30px;
+    .blog-card img{
+      width:100%;
+      height:250px;
+      object-fit:cover;
     }
 
-    .blog-content h3 {
-      margin-bottom: 15px;
-      font-size: 28px;
+    .blog-content{
+      padding:30px;
     }
 
-    .contact {
-      background: #111;
-      color: white;
-      text-align: center;
+    .blog-content h3{
+      margin-bottom:15px;
+      font-size:28px;
     }
 
-    .contact p {
-      max-width: 700px;
-      margin: 20px auto;
-      font-size: 20px;
-      color: #ddd;
+    .contact{
+      background:#111;
+      color:white;
+      text-align:center;
     }
 
-    .contact-links {
-      margin-top: 40px;
+    .contact p{
+      max-width:700px;
+      margin:20px auto;
+      font-size:20px;
+      color:#ddd;
     }
 
-    .contact-links a {
-      display: inline-block;
-      margin: 10px;
-      padding: 16px 28px;
-      background: #d6a76b;
-      color: black;
-      text-decoration: none;
-      border-radius: 12px;
-      font-weight: bold;
+    .contact-links{
+      margin-top:40px;
     }
 
-    footer {
-      background: black;
-      color: #aaa;
-      text-align: center;
-      padding: 25px;
+    .contact-links a{
+      display:inline-block;
+      margin:10px;
+      padding:16px 28px;
+      background:#d6a76b;
+      color:black;
+      text-decoration:none;
+      border-radius:12px;
+      font-weight:bold;
     }
 
-    @media(max-width:900px) {
+    footer{
+      background:black;
+      color:#aaa;
+      text-align:center;
+      padding:25px;
+    }
+
+    @media(max-width:900px){
 
       .hero-content,
       .about-grid,
-      .journey-grid {
-        grid-template-columns: 1fr;
+      .journey-grid{
+        grid-template-columns:1fr;
       }
 
-      .hero h1 {
-        font-size: 48px;
+      .hero h1{
+        font-size:48px;
       }
 
-      nav ul {
-        display: none;
+      nav ul{
+        display:none;
       }
 
     }
+
   </style>
+
 </head>
 
 <body>
 
 <nav>
+
   <div class="nav-container">
-    <div class="logo">Masheica Thomas</div>
+
+    <div class="logo">
+      Masheica Thomas
+    </div>
 
     <ul>
       <li><a href="#about">About</a></li>
@@ -291,7 +304,9 @@
       <li><a href="#blog">Blog</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+
   </div>
+
 </nav>
 
 <section class="hero">
@@ -299,21 +314,29 @@
   <div class="hero-content">
 
     <div>
+
       <h1>
         Behind Every Successful CEO Is Exceptional <span class="highlight">Support.</span>
       </h1>
 
       <p>
-        I help entrepreneurs, executives, creatives, and growing brands stay organized, visible, and impactful through executive support, digital strategy, and smart systems.
+        Executive Assistant, Digital Strategist, Social Media Manager, and Caribbean-based professional helping businesses stay organized, visible, and impactful.
       </p>
 
-      <a href="https://wa.me/18687004842" class="btn">Chat On WhatsApp</a>
+      <a href="https://wa.me/18687094842" class="btn">
+        Chat On WhatsApp
+      </a>
 
-      <a href="https://www.linkedin.com/in/masheica-thomas" class="btn btn-outline">View LinkedIn</a>
+      <a href="https://www.linkedin.com/in/masheica-thomas" class="btn btn-outline">
+        View LinkedIn
+      </a>
+
     </div>
 
     <div>
-      <img src="https://i.imgur.com/9X0pYQf.png" alt="Masheica Thomas">
+
+      <img src="https://i.imgur.com/ECnPGPk.png" alt="Masheica Thomas">
+
     </div>
 
   </div>
@@ -325,25 +348,29 @@
   <div class="container about-grid">
 
     <div class="about-image">
-      <img src="https://i.imgur.com/9X0pYQf.png" alt="Masheica Thomas">
+
+      <img src="https://i.imgur.com/4n3pZPC.png" alt="Masheica Thomas">
+
     </div>
 
     <div class="about-text">
+
       <h2 class="section-title" style="text-align:left;">
-        More Than A VA.
+        More Than A VA
       </h2>
 
       <p>
-        With over 7 years of administrative and executive support experience, I’ve had the privilege of supporting CEOs, entrepreneurs, and growing businesses across multiple industries.
+        With over 7 years of experience in administration, executive support, digital marketing, and operations, I’ve helped businesses and leaders stay organized and focused on growth.
       </p>
 
       <p>
-        My journey includes working in business advisory and accounting, supporting luxury real estate leadership, managing digital marketing operations, and helping professionals build stronger systems behind the scenes.
+        My journey includes supporting luxury real estate leadership, working within business advisory and accounting environments, assisting CEOs, managing systems, and helping brands improve their digital presence.
       </p>
 
       <p>
-        Today, I help entrepreneurs streamline operations, elevate their brand presence, and stay focused on their bigger vision while I manage the details.
+        Today, I also help aspiring virtual assistants understand the tools, systems, AI integrations, and confidence needed to succeed in remote work and digital business.
       </p>
+
     </div>
 
   </div>
@@ -361,51 +388,63 @@
     <div class="services-grid">
 
       <div class="card">
+
         <h3>Executive Assistance</h3>
 
         <p>
-          Calendar management, organization systems, client communication, reporting, travel coordination, and executive-level support.
+          Calendar management, inbox organization, scheduling, reporting, client follow-ups, and operational support.
         </p>
+
       </div>
 
       <div class="card">
+
         <h3>Social Media Management</h3>
 
         <p>
-          Content planning, social media support, branding strategy, captions, scheduling, and visibility management.
+          Content planning, branding support, scheduling, captions, engagement, and visibility management.
         </p>
+
       </div>
 
       <div class="card">
+
         <h3>Digital Marketing Support</h3>
 
         <p>
-          Campaign coordination, marketing systems, CRM support, email management, and digital organization.
+          Marketing coordination, CRM support, systems organization, and digital business assistance.
         </p>
+
       </div>
 
       <div class="card">
-        <h3>Training & Mentorship</h3>
+
+        <h3>AI & Productivity Training</h3>
 
         <p>
-          Helping aspiring virtual assistants learn the tools, confidence, and systems needed to succeed remotely.
+          Helping professionals and aspiring VAs use modern AI tools and systems to improve efficiency and workflow.
         </p>
+
       </div>
 
       <div class="card">
+
         <h3>Crypto & Digital Education</h3>
 
         <p>
-          Sharing insights around digital opportunities, online income, AI tools, crypto education, and technology trends.
+          Sharing insights around digital opportunities, crypto education, online tools, and the evolving digital economy.
         </p>
+
       </div>
 
       <div class="card">
+
         <h3>Custom Support</h3>
 
         <p>
-          Flexible support tailored to your business needs, projects, systems, and growth goals.
+          Flexible support tailored to your business, systems, workflow, projects, and long-term goals.
         </p>
+
       </div>
 
     </div>
@@ -419,25 +458,29 @@
   <div class="container journey-grid">
 
     <div>
+
       <h2 class="section-title" style="text-align:left;">
-        My Journey
+        Training & Leadership
       </h2>
 
       <p>
-        From administrative support to executive leadership assistance, my career has been built around helping people grow.
+        Beyond client support, I’m passionate about helping others build confidence in the digital world through training, mentorship, and practical guidance.
       </p>
 
       <p>
-        I’ve worked with luxury real estate professionals, business advisory teams, entrepreneurs, creatives, and ministries while continuously developing my skills in organization, systems, branding, and digital business.
+        I regularly help aspiring virtual assistants understand business systems, online tools, AI integrations, remote work opportunities, and professional growth strategies.
       </p>
 
       <p>
-        Beyond client work, I’m passionate about helping others discover remote opportunities and build confidence in the digital space.
+        My goal is not just to support businesses — but to help people grow personally and professionally in the modern digital economy.
       </p>
+
     </div>
 
     <div>
-      <img src="https://i.imgur.com/9X0pYQf.png" alt="Masheica Thomas">
+
+      <img src="https://i.imgur.com/HsvuGcJ.png" alt="Masheica Thomas Zoom Training">
+
     </div>
 
   </div>
@@ -459,11 +502,15 @@
         <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop" alt="Remote Work">
 
         <div class="blog-content">
-          <h3>Building a Remote Career from the Caribbean</h3>
+
+          <h3>
+            Building a Remote Career from the Caribbean
+          </h3>
 
           <p>
             Lessons, tools, and strategies for creating online opportunities and growing professionally in the digital economy.
           </p>
+
         </div>
 
       </div>
@@ -473,11 +520,15 @@
         <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop" alt="AI Business">
 
         <div class="blog-content">
-          <h3>How AI Is Changing Business</h3>
+
+          <h3>
+            How AI Is Changing Business
+          </h3>
 
           <p>
-            Exploring how modern AI tools are transforming productivity, systems, business operations, and remote work.
+            Exploring how modern AI tools are transforming productivity, systems, and business operations.
           </p>
+
         </div>
 
       </div>
@@ -487,11 +538,15 @@
         <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop" alt="Organization">
 
         <div class="blog-content">
-          <h3>Staying Organized While Managing Multiple Projects</h3>
+
+          <h3>
+            Staying Organized While Managing Multiple Projects
+          </h3>
 
           <p>
-            Systems and habits that help entrepreneurs and professionals stay focused and productive.
+            Productivity systems and habits that help entrepreneurs and professionals stay focused and efficient.
           </p>
+
         </div>
 
       </div>
@@ -511,7 +566,7 @@
     </h2>
 
     <p>
-      Whether you need executive support, branding assistance, social media management, digital systems support, or mentorship, I’d love to connect with you.
+      Whether you need executive support, branding assistance, social media management, AI integration guidance, or mentorship, I’d love to connect with you.
     </p>
 
     <div class="contact-links">
@@ -520,7 +575,7 @@
         WhatsApp Me
       </a>
 
-      <a href="mailto:masheicathomas@gmail.com">
+      <a href="mailto:MasheicaThomas@gmail.com">
         Send Email
       </a>
 
@@ -539,8 +594,8 @@
 </section>
 
 <footer>
-  © 2026 Masheica Thomas. Organized Support. Lasting Impact.
+  © 2026 Masheica Thomas • Organized Support • Digital Strategy • Professional Growth
 </footer>
 
 </body>
-</html>
+    </html>

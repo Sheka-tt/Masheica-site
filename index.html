@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Masheica Thomas | Executive Support & Digital Strategy</title>
 
   <style>
@@ -13,23 +13,23 @@
       box-sizing:border-box;
     }
 
+    html{
+      scroll-behavior:smooth;
+    }
+
     body{
-      font-family:Arial, sans-serif;
+      font-family:Arial,sans-serif;
       background:#f8f5f1;
       color:#111;
       line-height:1.6;
-    }
-
-    html{
-      scroll-behavior:smooth;
     }
 
     nav{
       position:sticky;
       top:0;
       background:#111;
-      z-index:1000;
       padding:18px 24px;
+      z-index:1000;
     }
 
     .nav-container{
@@ -137,16 +137,16 @@
       align-items:center;
     }
 
-    .about-text p{
-      margin-bottom:20px;
-      color:#555;
-      font-size:20px;
-    }
-
     .about-image img{
       width:100%;
       border-radius:28px;
       box-shadow:0 15px 40px rgba(0,0,0,0.1);
+    }
+
+    .about-text p{
+      margin-bottom:20px;
+      color:#555;
+      font-size:20px;
     }
 
     .services{
@@ -203,7 +203,7 @@
 
     .blog-grid{
       display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
       gap:30px;
       margin-top:50px;
     }
@@ -213,11 +213,16 @@
       border-radius:24px;
       overflow:hidden;
       box-shadow:0 10px 30px rgba(0,0,0,0.08);
+      transition:0.3s;
+    }
+
+    .blog-card:hover{
+      transform:translateY(-8px);
     }
 
     .blog-card img{
       width:100%;
-      height:250px;
+      height:240px;
       object-fit:cover;
     }
 
@@ -228,6 +233,19 @@
     .blog-content h3{
       margin-bottom:15px;
       font-size:28px;
+    }
+
+    .blog-content a{
+      text-decoration:none;
+      color:#111;
+    }
+
+    .read-more{
+      display:inline-block;
+      margin-top:20px;
+      color:#c79a5b;
+      font-weight:bold;
+      text-decoration:none;
     }
 
     .contact{
@@ -301,7 +319,7 @@
       <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href="#journey">Journey</a></li>
-      <li><a href="#blog">Blog</a></li>
+      <li><a href="#blog">Articles</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
 
@@ -388,63 +406,45 @@
     <div class="services-grid">
 
       <div class="card">
-
         <h3>Executive Assistance</h3>
-
         <p>
           Calendar management, inbox organization, scheduling, reporting, client follow-ups, and operational support.
         </p>
-
       </div>
 
       <div class="card">
-
         <h3>Social Media Management</h3>
-
         <p>
           Content planning, branding support, scheduling, captions, engagement, and visibility management.
         </p>
-
       </div>
 
       <div class="card">
-
         <h3>Digital Marketing Support</h3>
-
         <p>
           Marketing coordination, CRM support, systems organization, and digital business assistance.
         </p>
-
       </div>
 
       <div class="card">
-
         <h3>AI & Productivity Training</h3>
-
         <p>
           Helping professionals and aspiring VAs use modern AI tools and systems to improve efficiency and workflow.
         </p>
-
       </div>
 
       <div class="card">
-
         <h3>Crypto & Digital Education</h3>
-
         <p>
           Sharing insights around digital opportunities, crypto education, online tools, and the evolving digital economy.
         </p>
-
       </div>
 
       <div class="card">
-
         <h3>Custom Support</h3>
-
         <p>
           Flexible support tailored to your business, systems, workflow, projects, and long-term goals.
         </p>
-
       </div>
 
     </div>
@@ -504,12 +504,18 @@
         <div class="blog-content">
 
           <h3>
-            Building a Remote Career from the Caribbean
+            <a href="article1.html">
+              Building a Remote Career from the Caribbean
+            </a>
           </h3>
 
           <p>
             Lessons, tools, and strategies for creating online opportunities and growing professionally in the digital economy.
           </p>
+
+          <a class="read-more" href="article1.html">
+            Read Full Article →
+          </a>
 
         </div>
 
@@ -522,12 +528,18 @@
         <div class="blog-content">
 
           <h3>
-            How AI Is Changing Business
+            <a href="article2.html">
+              How AI Is Changing Business
+            </a>
           </h3>
 
           <p>
             Exploring how modern AI tools are transforming productivity, systems, and business operations.
           </p>
+
+          <a class="read-more" href="article2.html">
+            Read Full Article →
+          </a>
 
         </div>
 
@@ -540,12 +552,18 @@
         <div class="blog-content">
 
           <h3>
-            Staying Organized While Managing Multiple Projects
+            <a href="article3.html">
+              Staying Organized While Managing Multiple Projects
+            </a>
           </h3>
 
           <p>
             Productivity systems and habits that help entrepreneurs and professionals stay focused and efficient.
           </p>
+
+          <a class="read-more" href="article3.html">
+            Read Full Article →
+          </a>
 
         </div>
 
@@ -594,8 +612,8 @@
 </section>
 
 <footer>
-  © 2026 Masheica Thomas • Organized Support • Digital Strategy • Professional Growth
+  © 2026 Masheica Thomas • Executive Support • Digital Strategy • Professional Growth
 </footer>
 
 </body>
-    </html>
+</html>

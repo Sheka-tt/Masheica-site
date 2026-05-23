@@ -365,5 +365,186 @@ opacity:1;
 transform:translateY(0);
 }
 
+@media(max-width:900px){
+
+.hero{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:52px;
+}
+
+.training{
+grid-template-columns:1fr;
+}
+
+header{
+flex-direction:column;
+gap:20px;
+}
+
+.training img{
+max-height:360px;
+}
+
+}
+
+@media(max-width:600px){
+
+.hero h1{
+font-size:44px;
+}
+
+.section-title{
+font-size:34px;
+}
+
+.hero p,
+.section-text{
+font-size:18px;
+}
+
+.logo{
+font-size:24px;
+}
+
+nav{
+justify-content:center;
+}
+
+.cta h2{
+font-size:36px;
+}
+
+}
+
 </style>
 </head>
+
+<body>
+
+<header>
+
+<div class="logo">Masheica Thomas</div>
+
+<nav>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#support">Businesses I Support</a>
+<a href="#highlights">Highlights</a>
+<a href="#articles">Articles</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero fade">
+
+<div>
+
+<h1>
+Behind Every Successful CEO Is Exceptional <span class="gold">Support.</span>
+</h1>
+
+<p>
+Executive Assistant, Digital Support Professional, and Virtual Assistant Mentor helping businesses worldwide stay organized, visible, and operationally strong.
+</p>
+
+<div class="hero-buttons">
+
+<a class="btn btn-dark" href="https://wa.me/18687094842">
+Chat On WhatsApp
+</a>
+
+<a class="btn btn-light" href="https://www.linkedin.com/in/masheica-thomas">
+View LinkedIn
+</a>
+
+</div>
+
+</div>
+
+<div>
+<img src="https://i.imgur.com/4n3pZPC.png">
+</div>
+
+</section>
+
+<footer id="contact">
+<div class="footer-grid">
+
+<div>
+<h3>Masheica Thomas</h3>
+<p>
+Executive Assistant, Digital Support Professional & VA Mentor helping businesses operate with clarity and structure.
+</p>
+</div>
+
+<div>
+<h3>Contact</h3>
+
+<p>
+Email:
+<a href="mailto:Masheicathomas@gmail.com">
+Masheicathomas@gmail.com
+</a>
+</p>
+
+<p>
+WhatsApp:
+<a href="https://wa.me/18687094842">
++1 (868) 709-4842
+</a>
+</p>
+
+</div>
+
+<div>
+
+<h3>Connect</h3>
+
+<p>
+<a href="https://www.linkedin.com/in/masheica-thomas">
+LinkedIn
+</a>
+</p>
+
+<p>
+<a href="https://www.facebook.com/Masheica">
+Facebook
+</a>
+</p>
+
+</div>
+
+</div>
+
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/18687094842">
+WhatsApp
+</a>
+
+<script>
+
+const fades = document.querySelectorAll('.fade');
+
+window.addEventListener('scroll', ()=>{
+
+fades.forEach(fade=>{
+
+const top = fade.getBoundingClientRect().top;
+
+if(top < window.innerHeight - 100){
+fade.classList.add('show');
+}
+
+});
+
+});
+
+</script>
+
+</body>
+</html>

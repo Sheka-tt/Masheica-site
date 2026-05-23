@@ -1,75 +1,421 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Masheica Thomas</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <style>
-    body {
-      margin: 0;
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
       font-family: Arial, sans-serif;
-      background: #f8f8f8;
-      color: #222;
+      background:#f8f8f8;
+      color:#111;
+      line-height:1.6;
     }
 
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 40px 20px;
-      text-align: center;
-      background: white;
+    nav{
+      position:sticky;
+      top:0;
+      background:white;
+      padding:20px;
+      border-bottom:1px solid #ddd;
+      z-index:1000;
     }
 
-    .hero img {
-      width: 280px;
-      max-width: 90%;
-      border-radius: 20px;
-      margin-bottom: 30px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    nav .nav-container{
+      max-width:1200px;
+      margin:auto;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
     }
 
-    h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
+    nav h2{
+      font-size:28px;
     }
 
-    p {
-      max-width: 700px;
-      font-size: 20px;
-      line-height: 1.6;
+    nav ul{
+      display:flex;
+      gap:20px;
+      list-style:none;
     }
 
-    .btn {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 14px 28px;
-      background: black;
-      color: white;
-      text-decoration: none;
-      border-radius: 12px;
-      font-weight: bold;
+    nav a{
+      text-decoration:none;
+      color:#111;
+      font-weight:bold;
+    }
+
+    .hero{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:60px 20px;
+      background:linear-gradient(to bottom right,#f3f3f3,#dddddd);
+    }
+
+    .hero-content{
+      max-width:1200px;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:60px;
+      align-items:center;
+    }
+
+    .hero-text h1{
+      font-size:64px;
+      margin-bottom:20px;
+      line-height:1.1;
+    }
+
+    .hero-text p{
+      font-size:22px;
+      color:#444;
+      margin-bottom:30px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:15px 28px;
+      background:black;
+      color:white;
+      text-decoration:none;
+      border-radius:12px;
+      margin-right:15px;
+      font-weight:bold;
+    }
+
+    .btn-outline{
+      background:transparent;
+      border:2px solid black;
+      color:black;
+    }
+
+    .hero-image img{
+      width:100%;
+      border-radius:30px;
+      box-shadow:0 15px 40px rgba(0,0,0,0.2);
+    }
+
+    section{
+      padding:100px 20px;
+    }
+
+    .container{
+      max-width:1200px;
+      margin:auto;
+    }
+
+    .section-title{
+      font-size:48px;
+      margin-bottom:30px;
+      text-align:center;
+    }
+
+    .about p{
+      font-size:20px;
+      color:#555;
+      max-width:900px;
+      margin:20px auto;
+      text-align:center;
+    }
+
+    .services-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+      margin-top:50px;
+    }
+
+    .card{
+      background:white;
+      padding:35px;
+      border-radius:24px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .card h3{
+      margin-bottom:15px;
+      font-size:28px;
+    }
+
+    .card p{
+      color:#666;
+    }
+
+    .blog-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:30px;
+      margin-top:50px;
+    }
+
+    .blog-card{
+      background:white;
+      border-radius:24px;
+      overflow:hidden;
+      box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .blog-image{
+      height:220px;
+      background:#ddd;
+    }
+
+    .blog-content{
+      padding:30px;
+    }
+
+    .blog-content h3{
+      margin-bottom:15px;
+      font-size:28px;
+    }
+
+    .contact{
+      background:black;
+      color:white;
+      text-align:center;
+    }
+
+    .contact p{
+      max-width:700px;
+      margin:20px auto 40px;
+      color:#ccc;
+      font-size:20px;
+    }
+
+    footer{
+      background:#111;
+      color:#aaa;
+      text-align:center;
+      padding:30px;
+    }
+
+    @media(max-width:900px){
+
+      .hero-content{
+        grid-template-columns:1fr;
+      }
+
+      .hero-text h1{
+        font-size:48px;
+      }
+
+      nav ul{
+        display:none;
+      }
+
     }
   </style>
 </head>
+
 <body>
 
+<nav>
+  <div class="nav-container">
+    <h2>Masheica Thomas</h2>
+
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
 <section class="hero">
-  <img src="https://i.imgur.com/9X0pYQf.png" alt="Masheica Thomas" />
 
-  <h1>Masheica Thomas</h1>
+  <div class="hero-content">
 
-  <p>
-    Virtual Executive Assistant, Social Media Manager, Creative Strategist,
-    and Community Builder helping brands grow with organization,
-    creativity, and purpose.
-  </p>
+    <div class="hero-text">
 
-  <a class="btn" href="#">
-    Read My Blog
-  </a>
+      <h1>
+        Helping Brands Grow Behind The Scenes
+      </h1>
+
+      <p>
+        Virtual Executive Assistant, Social Media Manager,
+        Creative Strategist, and Community Builder helping
+        entrepreneurs and businesses stay organized,
+        visible, and impactful.
+      </p>
+
+      <a href="#" class="btn">
+        Explore My Blog
+      </a>
+
+      <a href="#" class="btn btn-outline">
+        Work With Me
+      </a>
+
+    </div>
+
+    <div class="hero-image">
+      <img src="https://i.imgur.com/9X0pYQf.png" alt="Masheica Thomas">
+    </div>
+
+  </div>
+
 </section>
+
+<section id="about" class="about">
+
+  <div class="container">
+
+    <h2 class="section-title">
+      About Me
+    </h2>
+
+    <p>
+      I’m Masheica Thomas, a Caribbean-based Virtual Executive Assistant and Digital Creative passionate about helping businesses stay organized, visible, and impactful.
+    </p>
+
+    <p>
+      My background spans executive support, social media management, ministry support, training aspiring virtual assistants, business organization, and digital entrepreneurship.
+    </p>
+
+  </div>
+
+</section>
+
+<section id="services">
+
+  <div class="container">
+
+    <h2 class="section-title">
+      Services
+    </h2>
+
+    <div class="services-grid">
+
+      <div class="card">
+        <h3>Executive Assistance</h3>
+        <p>
+          Calendar management, organization systems, workflow support, and operational assistance.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Social Media Management</h3>
+        <p>
+          Branding, content planning, audience engagement, and visibility strategies.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Training & Mentorship</h3>
+        <p>
+          Helping aspiring virtual assistants and entrepreneurs build digital opportunities.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="blog">
+
+  <div class="container">
+
+    <h2 class="section-title">
+      Latest Articles
+    </h2>
+
+    <div class="blog-grid">
+
+      <div class="blog-card">
+
+        <div class="blog-image"></div>
+
+        <div class="blog-content">
+
+          <h3>
+            Building a Remote Career from the Caribbean
+          </h3>
+
+          <p>
+            Lessons and strategies for creating online opportunities and remote work success.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="blog-card">
+
+        <div class="blog-image"></div>
+
+        <div class="blog-content">
+
+          <h3>
+            How AI is Changing Business
+          </h3>
+
+          <p>
+            Exploring how modern AI tools are transforming productivity and online business.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="blog-card">
+
+        <div class="blog-image"></div>
+
+        <div class="blog-content">
+
+          <h3>
+            Staying Organized While Managing Multiple Projects
+          </h3>
+
+          <p>
+            Productivity systems and lessons from working in fast-paced environments.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="contact" class="contact">
+
+  <div class="container">
+
+    <h2 class="section-title">
+      Let's Connect
+    </h2>
+
+    <p>
+      Whether you need executive support, social media management, creative assistance, or collaboration, I’d love to connect with you.
+    </p>
+
+    <a href="#" class="btn">
+      Contact Me
+    </a>
+
+  </div>
+
+</section>
+
+<footer>
+  © 2026 Masheica Thomas. All Rights Reserved.
+</footer>
 
 </body>
 </html>

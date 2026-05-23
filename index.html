@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Masheica Thomas | Executive Assistant</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -20,13 +20,13 @@ body{
 font-family:'Poppins',sans-serif;
 background:#f4f1ec;
 color:#111;
-line-height:1.7;
 overflow-x:hidden;
+line-height:1.7;
 }
 
 header{
 background:#000;
-padding:20px 8%;
+padding:18px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
@@ -36,14 +36,19 @@ z-index:1000;
 }
 
 .logo{
-font-size:32px;
+font-size:28px;
 font-weight:700;
 color:#d6ab6a;
 }
 
+nav{
+display:flex;
+flex-wrap:wrap;
+gap:18px;
+}
+
 nav a{
 color:white;
-margin-left:20px;
 text-decoration:none;
 font-size:14px;
 font-weight:500;
@@ -58,15 +63,15 @@ color:#d6ab6a;
 min-height:100vh;
 display:grid;
 grid-template-columns:1fr 1fr;
-align-items:center;
-padding:80px 8%;
 gap:60px;
+align-items:center;
+padding:90px 8%;
 }
 
 .hero h1{
-font-size:72px;
+font-size:74px;
 line-height:1.05;
-margin-bottom:20px;
+margin-bottom:25px;
 font-weight:700;
 }
 
@@ -92,8 +97,8 @@ padding:16px 34px;
 border-radius:14px;
 text-decoration:none;
 font-weight:600;
-transition:0.3s;
 display:inline-block;
+transition:0.3s;
 }
 
 .btn-dark{
@@ -123,9 +128,9 @@ animation:float 5s ease-in-out infinite;
 }
 
 @keyframes float{
-0%{transform:translateY(0px);}
+0%{transform:translateY(0);}
 50%{transform:translateY(-10px);}
-100%{transform:translateY(0px);}
+100%{transform:translateY(0);}
 }
 
 section{
@@ -139,14 +144,14 @@ font-weight:700;
 }
 
 .section-text{
-max-width:850px;
 font-size:20px;
+max-width:850px;
 color:#444;
 }
 
 .cards{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:30px;
 margin-top:50px;
 }
@@ -179,8 +184,9 @@ align-items:center;
 width:100%;
 border-radius:24px;
 box-shadow:0 15px 35px rgba(0,0,0,0.15);
-max-height:650px;
+max-height:500px;
 object-fit:cover;
+object-position:center top;
 }
 
 .stats{
@@ -191,10 +197,10 @@ margin-top:50px;
 }
 
 .stat{
-text-align:center;
 background:white;
 padding:35px;
 border-radius:20px;
+text-align:center;
 box-shadow:0 8px 25px rgba(0,0,0,0.08);
 }
 
@@ -205,7 +211,7 @@ color:#d6ab6a;
 
 .testimonials{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:30px;
 margin-top:50px;
 }
@@ -218,8 +224,8 @@ box-shadow:0 8px 25px rgba(0,0,0,0.08);
 }
 
 .testimonial p{
-font-style:italic;
 margin-bottom:20px;
+font-style:italic;
 }
 
 .articles{
@@ -275,7 +281,7 @@ color:#ddd;
 footer{
 background:#111;
 color:white;
-padding:60px 8%;
+padding:70px 8%;
 margin-top:80px;
 }
 
@@ -292,14 +298,14 @@ text-decoration:none;
 
 .whatsapp-float{
 position:fixed;
-bottom:25px;
-right:25px;
+bottom:20px;
+right:20px;
 background:#25D366;
 color:white;
 padding:16px 22px;
 border-radius:50px;
-text-decoration:none;
 font-weight:600;
+text-decoration:none;
 box-shadow:0 8px 25px rgba(0,0,0,0.2);
 z-index:999;
 }
@@ -322,7 +328,7 @@ grid-template-columns:1fr;
 }
 
 .hero h1{
-font-size:58px;
+font-size:52px;
 }
 
 .training{
@@ -334,16 +340,8 @@ flex-direction:column;
 gap:20px;
 }
 
-nav{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:10px;
-}
-
 .training img{
-max-height:400px;
-object-position:center top;
+max-height:360px;
 }
 
 }
@@ -351,11 +349,11 @@ object-position:center top;
 @media(max-width:600px){
 
 .hero h1{
-font-size:42px;
+font-size:44px;
 }
 
 .section-title{
-font-size:36px;
+font-size:34px;
 }
 
 .hero p,
@@ -367,9 +365,8 @@ font-size:18px;
 font-size:24px;
 }
 
-nav a{
-font-size:12px;
-margin-left:10px;
+nav{
+justify-content:center;
 }
 
 .cta h2{
@@ -384,20 +381,23 @@ font-size:36px;
 <body>
 
 <header>
+
 <div class="logo">Masheica Thomas</div>
 
 <nav>
 <a href="#about">About</a>
 <a href="#services">Services</a>
-<a href="#expertise">Expertise</a>
+<a href="#support">Businesses I Support</a>
 <a href="#articles">Articles</a>
 <a href="#contact">Contact</a>
 </nav>
+
 </header>
 
 <section class="hero fade">
 
 <div>
+
 <h1>
 Behind Every Successful CEO Is Exceptional <span class="gold">Support.</span>
 </h1>
@@ -407,10 +407,17 @@ Executive Assistant, Digital Strategist, Virtual Assistant Mentor, and operation
 </p>
 
 <div class="hero-buttons">
-<a class="btn btn-dark" href="https://wa.me/18687094842">Chat On WhatsApp</a>
 
-<a class="btn btn-light" href="https://www.linkedin.com/in/masheica-thomas">View LinkedIn</a>
+<a class="btn btn-dark" href="https://wa.me/18687094842">
+Chat On WhatsApp
+</a>
+
+<a class="btn btn-light" href="https://www.linkedin.com/in/masheica-thomas">
+View LinkedIn
+</a>
+
 </div>
+
 </div>
 
 <div>
@@ -426,9 +433,9 @@ Executive Assistant, Digital Strategist, Virtual Assistant Mentor, and operation
 <p class="section-text">
 I’m Masheica Thomas, a Caribbean-based Executive Assistant and Digital Support Professional with over 7 years of experience helping businesses operate efficiently behind the scenes.
 
-My background spans executive support, business advisory operations, real estate administration, digital marketing, social media management, and virtual assistant mentorship.
+My experience spans executive assistance, business advisory operations, real estate administration, social media management, AI productivity systems, and virtual assistant mentorship.
 
-Today, I support entrepreneurs, executives, and growing teams internationally while also helping aspiring virtual assistants understand modern tools, systems, AI integrations, and remote work operations.
+Today, I support entrepreneurs, executives, and growing teams internationally while also helping aspiring virtual assistants understand modern digital tools and remote work systems.
 </p>
 
 <div class="stats">
@@ -460,12 +467,12 @@ Today, I support entrepreneurs, executives, and growing teams internationally wh
 
 <div class="card">
 <h3>Executive Assistance</h3>
-<p>Calendar management, operations support, organization, communication, CRM management, and workflow coordination.</p>
+<p>Calendar management, CRM support, workflow coordination, email management, scheduling, and operational organization.</p>
 </div>
 
 <div class="card">
-<h3>Social Media Support</h3>
-<p>Content scheduling, brand organization, posting assistance, engagement support, and digital visibility management.</p>
+<h3>Digital Support</h3>
+<p>Social media assistance, content organization, digital branding support, and online visibility management.</p>
 </div>
 
 <div class="card">
@@ -474,26 +481,26 @@ Today, I support entrepreneurs, executives, and growing teams internationally wh
 </div>
 
 <div class="card">
-<h3>AI & Productivity Tools</h3>
-<p>Guidance on AI tools, digital systems, automation workflows, and modern remote work productivity solutions.</p>
+<h3>AI & Productivity Systems</h3>
+<p>Helping teams understand AI tools, automations, productivity systems, and modern remote work operations.</p>
 </div>
 
 </div>
 
 </section>
 
-<section id="expertise" class="training fade">
+<section id="support" class="training fade">
 
 <div>
 
-<h2 class="section-title">Leadership, Training & Digital Growth</h2>
+<h2 class="section-title">
+Businesses I Support
+</h2>
 
 <p class="section-text">
-Beyond supporting businesses operationally, I’m passionate about helping professionals adapt to the modern digital workspace.
+I support entrepreneurs, executives, remote teams, real estate professionals, growing businesses, and aspiring virtual assistants by helping improve organization, communication, systems, workflow efficiency, and digital operations.
 
-I regularly help aspiring virtual assistants understand tools like ChatGPT, Trello, CRM systems, Google Workspace, automation workflows, and remote operational systems.
-
-My focus is helping businesses and professionals create stronger systems, improve organization, and scale with clarity.
+From executive support to AI productivity systems and virtual assistant coordination, my focus is helping modern businesses operate with greater clarity, structure, and confidence in a digital world.
 </p>
 
 </div>
@@ -512,26 +519,31 @@ My focus is helping businesses and professionals create stronger systems, improv
 
 <div class="testimonial">
 <p>
-“Masheica brought structure, organization, and consistency to our daily operations. Reliable and proactive.”
+“Masheica brought structure, organization, and consistency to our operations. Reliable and proactive.”
 </p>
 
 <strong>Business Client</strong>
+
 </div>
 
 <div class="testimonial">
+
 <p>
 “Professional, adaptable, and highly organized. Communication and follow-through were excellent.”
 </p>
 
 <strong>Executive Client</strong>
+
 </div>
 
 <div class="testimonial">
+
 <p>
-“She understands modern tools and remote workflows extremely well and explains them clearly.”
+“She explains digital tools and systems clearly and professionally. Extremely helpful training support.”
 </p>
 
 <strong>Training Participant</strong>
+
 </div>
 
 </div>
@@ -549,8 +561,13 @@ My focus is helping businesses and professionals create stronger systems, improv
 <img src="https://i.imgur.com/HsvuGcJ.png">
 
 <div class="article-content">
+
 <h3>AI & The Future Of Virtual Assistance</h3>
-<p>How AI tools are changing remote work, operations, and digital productivity.</p>
+
+<p>
+How AI tools are changing remote work, operations, and productivity.
+</p>
+
 </div>
 
 </a>
@@ -560,8 +577,13 @@ My focus is helping businesses and professionals create stronger systems, improv
 <img src="https://i.imgur.com/ECnPGPk.png">
 
 <div class="article-content">
+
 <h3>Building Better Systems For Business Growth</h3>
-<p>Why organization and operational systems matter for scaling businesses.</p>
+
+<p>
+Why organization and operational systems matter for scaling businesses.
+</p>
+
 </div>
 
 </a>
@@ -571,8 +593,13 @@ My focus is helping businesses and professionals create stronger systems, improv
 <img src="https://i.imgur.com/4n3pZPC.png">
 
 <div class="article-content">
+
 <h3>The Modern Executive Assistant</h3>
-<p>How executive support roles continue evolving in the digital age.</p>
+
+<p>
+How executive support roles continue evolving in the digital age.
+</p>
+
 </div>
 
 </a>
@@ -586,7 +613,7 @@ My focus is helping businesses and professionals create stronger systems, improv
 <h2>Need Professional Operational Support?</h2>
 
 <p>
-Available for remote opportunities, executive support, virtual assistance coordination, and digital operations worldwide.
+Available for remote opportunities, executive support, digital operations, and virtual assistance worldwide.
 </p>
 
 <a class="btn btn-dark" href="mailto:Masheicathomas@gmail.com">
@@ -600,18 +627,37 @@ Book A Consultation
 <div class="footer-grid">
 
 <div>
+
 <h3>Masheica Thomas</h3>
-<p>Executive Assistant, Digital Strategist & VA Mentor.</p>
+
+<p>
+Executive Assistant, Digital Strategist & VA Mentor.
+</p>
+
 </div>
 
 <div>
+
 <h3>Contact</h3>
-<p>Email: <a href="mailto:Masheicathomas@gmail.com">Masheicathomas@gmail.com</a></p>
 
-<p>WhatsApp: <a href="https://wa.me/18687094842">+1 (868) 709-4842</a></p>
+<p>
+Email:
+<a href="mailto:Masheicathomas@gmail.com">
+Masheicathomas@gmail.com
+</a>
+</p>
+
+<p>
+WhatsApp:
+<a href="https://wa.me/18687094842">
++1 (868) 709-4842
+</a>
+</p>
+
 </div>
 
 <div>
+
 <h3>Socials</h3>
 
 <p>
@@ -657,4 +703,4 @@ fade.classList.add('show');
 </script>
 
 </body>
-  </html>
+</html>
